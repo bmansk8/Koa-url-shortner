@@ -1,0 +1,5 @@
+{
+    "DBconnectionString": "azure cosmos db string goes here"
+}
+
+//this would go inside /config

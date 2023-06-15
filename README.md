@@ -18,7 +18,7 @@ The config package is also used to get the db string from a config json file.
 
 Koa uses async await, and so all function calls need to follow that. This enables us to use ctx.status and ctx.response.body for error handling and sending back a status
 
-## /get
+## GET:/123key
 
 A get request would be for triggering a redirect.
 
@@ -26,7 +26,7 @@ An example would be ```https://www.k8scluster.com/123uniuqeKey```
 
 123uniuqeKey is the id/key created by the /post request
 
-## /post
+## POST:/
 
 This is where you can register a new key/id. You can pass a custom name, or let one be generated.
 You must also pass the url to attach the id/key to.
@@ -39,7 +39,7 @@ example request
 }
 ```
 
-## /patch
+## PATCH:/
 
 This is where you can update a key/id. 
 You must pass the id/key for the item to be updated
@@ -53,7 +53,7 @@ example request
 }
 ```
 
-## /delete
+## DELETE:/
 
 This is where you can remove a key/id. 
 You must pass the id/key for the item to be updated
